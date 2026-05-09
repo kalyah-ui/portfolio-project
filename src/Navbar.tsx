@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -37,11 +37,11 @@ function Navbar() {
         </div>
         
         <ul className="navbar-menu">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/page2">Projects</Link></li>
-          <li><Link to="/page3">About Me</Link></li>
-          <li><Link to="/page4">Experience</Link></li>
-          <li><Link to="/page5">Contact</Link></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div className="navbar-hamburger" onClick={toggleMenu} ref={hamburgerRef}>
@@ -51,11 +51,11 @@ function Navbar() {
         </div>
 
         <ul className={`navbar-mobile-menu ${isOpen ? 'active' : ''}`} ref={menuRef}>
-        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-  <li><Link to="/page2" onClick={closeMenu}>Projects</Link></li>
-  <li><Link to="/page3" onClick={closeMenu}>About Me</Link></li>
-  <li><Link to="/page4" onClick={closeMenu}>Experience</Link></li>
-  <li><Link to="/page5" onClick={closeMenu}>Contact</Link></li>
+        <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#about-me" onClick={closeMenu}>About Me</a></li>
+        <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
       </div>
     </nav>
