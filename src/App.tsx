@@ -5,7 +5,10 @@ import FadeInSection from './components/fade-in-section';
 import Button from "./components/button";
 import MyProjects from './components/my-projects';
 import AboutMe from './components/about-me';
-import {NebulaClouds} from "@/components/demos/dust-cloud.tsx";
+import {NebulaClouds} from "@/components/ui/dust-cloud.tsx";
+import SkillsDemo from "./components/demos/skills-demo";
+import ExperienceCatalog from "./components/experience";
+import ContactMe from "./components/contact-me";
 
 function App() {
   return (
@@ -18,13 +21,13 @@ function App() {
       <div className="relative z-10">
         <Navbar />
           <section id="home">
-            <div>
+            <div className="home-container">
               <FadeInSection direction="down">
               <h1>Hello World!</h1>
               </FadeInSection>
               <FadeInSection direction="down">
                 <p>
-                  I'm Kalyah, a computer systems engineering student with a passion for software development and space systems. 
+                  I'm Kalyah, a computer systems engineering student with a passion for software development. 
                   Welcome to my portfolio! I love exploring new technologies and turning creative ideas into reality.
                 </p>
               </FadeInSection>
@@ -44,9 +47,43 @@ function App() {
               <MyProjects />
             </div>
           </section>
+
           <section id="about-me"> 
             <div>
               <AboutMe />
+            </div>
+          </section>
+
+          <section id="skills">
+            <div>
+              <FadeInSection direction="down">
+                <h1>Skills</h1>
+              </FadeInSection>
+              <FadeInSection direction="down">
+                <SkillsDemo />
+              </FadeInSection>
+            </div>
+          </section>
+
+          <section id="experience">
+            <div>
+              <FadeInSection direction="down">
+                <h1>Experience</h1>
+              </FadeInSection>
+              <FadeInSection direction="down">
+                <ExperienceCatalog />
+              </FadeInSection>
+            </div>
+          </section>
+
+          <section id="contact">
+            <div>
+              <FadeInSection direction="down">
+                <h1>Let's Connect</h1>
+              </FadeInSection>
+              <FadeInSection direction="down">
+                 <ContactMe />  
+              </FadeInSection>
             </div>
           </section>
       </div>

@@ -6,7 +6,7 @@ import mapPin from "../assets/map-pin.svg";
 export default function AboutMe() {
   return (
     <section id="about" className="about-container">
-      
+
       <FadeInSection direction="left">
         <div className="about-image-wrapper">
           <div
@@ -27,10 +27,10 @@ export default function AboutMe() {
             I love learning new things and am currently orbiting between school,
             side projects, and co-op terms.
             <br /><br />
-            I have real-world software development experience in React, Angular,
+            I have real-world software development experience in app design, Angular,
             Microsoft apps, and Googling error messages at light speed.
             <br /><br />
-            When I'm not coding, I'm probably redesigning something that didn’t
+            When I'm not coding, I'm probably redesigning something that didn't
             ask to be redesigned, or discussing the logistics of entering a
             black hole with my friends.
             <br /><br />

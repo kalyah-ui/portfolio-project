@@ -14,18 +14,16 @@ export default function FadeInSection({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Fade IN when at least 30% visible
         if (entry.intersectionRatio > 0.3) {
           entry.target.classList.add("visible");
         }
 
-        // Fade OUT only when completely out of view
         if (entry.intersectionRatio === 0) {
           entry.target.classList.remove("visible");
         }
       },
       {
-        threshold: [0, 0.3, 1], // multiple thresholds prevent flicker
+        threshold: [0, 0.3, 1],
         rootMargin: "0px 0px -5% 0px",
       }
     );
