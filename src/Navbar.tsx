@@ -33,7 +33,7 @@ function Navbar() {
       <div className="navbar-container">
 
         <div className="navbar-logo">
-          <Link to="/">kalyahmckesey.me</Link>
+          <Link to="/">kalyahmckesey.com</Link>
         </div>
 
         <ul className="navbar-menu">

@@ -72,8 +72,13 @@ body::before {
 }
 
 section {
-  padding-block: 120;
+  padding-block: 120px;
   margin-bottom: 300px;
+}
+
+section:last-of-type {
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
