@@ -26,12 +26,12 @@ function ProjectCard({ project }: { project: { id: number; name: string; descrip
 export default function ProjectCatalog() {
   return (
     <div className="project-grid">
-  {projects.map((project) => (
-    <FadeInSection key={project.id} direction="down">
-      <ProjectCard project={project} />
-    </FadeInSection>
-  ))}
-</div>
+      {projects.map((project) => (
+        <FadeInSection key={project.id} direction="down">
+          <ProjectCard project={project} />
+        </FadeInSection>
+      ))}
+    </div>
 
   );
 }

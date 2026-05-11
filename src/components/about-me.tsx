@@ -12,10 +12,10 @@ export default function AboutMe() {
           <div
             className="about-image"
             style={{
-                "--gray-img": `url(${grayImg})`,
-                "--color-img": `url(${colorImg})`,
+              "--gray-img": `url(${grayImg})`,
+              "--color-img": `url(${colorImg})`,
             } as React.CSSProperties}
-            />
+          />
         </div>
       </FadeInSection>
 
@@ -35,11 +35,11 @@ export default function AboutMe() {
             black hole with my friends.
             <br /><br />
           </p>
-    
+
         </div>
         <div className="location-pill">
-            <img src={mapPin} alt="Location Icon" className="location-icon" />
-            <span>Ontario, Canada</span>
+          <img src={mapPin} alt="Location Icon" className="location-icon" />
+          <span>Ontario, Canada</span>
         </div>
 
       </FadeInSection>

@@ -1,13 +1,14 @@
 import FadeInSection from "./fade-in-section";
 
 const experiences = [
-  { id: 1, name: "Department of National Defense",
+  {
+    id: 1, name: "Department of National Defense",
     position: "Software Developer Co-op",
-    description:  `• Worked on the dev-ops team to develop applications and tools to support the software development lifecycle of internal software products.
+    description: `• Worked on the dev-ops team to develop applications and tools to support the software development lifecycle of internal software products.
     • Designed and implemented a model-driven PowerApps application to streamline the process of managing software development projects, including task tracking, resource allocation, and progress monitoring, resulting in improved project visibility and team collaboration.
     • Collaborated and met with team members to gather requirements, design user interfaces, and implement applications using Microsoft Power Apps and Power Automate, enhancing internal workflows and increasing efficiency across departments.
     • Developed Power Automate flows to automate routine tasks and processes, such as data entry, notifications, and approvals, resulting in significant time savings and improved accuracy for end-users.`,
-    tools: ["Microsoft Power Apps", "Microsoft Power Automate", "User Interface Design", "Dataverse", "Windows Software Development"], 
+    tools: ["Microsoft Power Apps", "Microsoft Power Automate", "User Interface Design", "Dataverse", "Windows Software Development"],
     duration: "March 2026 - Present"
   },
   {
@@ -38,19 +39,19 @@ function ExperienceCard({
     <div className="experience-container">
       <div className="experience-indicator" />
       <div className="experience-card">
-      <div className="experience-content">
-        <h3 className="project-title">{experience.name}</h3>
-        <p className="experience-position">{experience.position}</p>
-        <p className="project-description">{experience.description}</p>
-        <p className="experience-duration">{experience.duration}</p>
-        <div className="project-tools">
-          {experience.tools.map((tool) => (
-            <span key={tool} className="tool-badge">
-              {tool}
-            </span>
-          ))}
+        <div className="experience-content">
+          <h3 className="project-title">{experience.name}</h3>
+          <p className="experience-position">{experience.position}</p>
+          <p className="project-description">{experience.description}</p>
+          <p className="experience-duration">{experience.duration}</p>
+          <div className="project-tools">
+            {experience.tools.map((tool) => (
+              <span key={tool} className="tool-badge">
+                {tool}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

@@ -31,11 +31,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        
+
         <div className="navbar-logo">
           <Link to="/">kalyahmckesey.me</Link>
         </div>
-        
+
         <ul className="navbar-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -52,11 +52,11 @@ function Navbar() {
         </div>
 
         <ul className={`navbar-mobile-menu ${isOpen ? 'active' : ''}`} ref={menuRef}>
-        <li><a href="#home" onClick={closeMenu}>Home</a></li>
-        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-        <li><a href="#about-me" onClick={closeMenu}>About Me</a></li>
-        <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
-        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+          <li><a href="#about-me" onClick={closeMenu}>About Me</a></li>
+          <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
       </div>
     </nav>
