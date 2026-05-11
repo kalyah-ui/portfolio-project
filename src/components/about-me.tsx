@@ -23,7 +23,7 @@ export default function AboutMe() {
         <div className="about-text">
           <h1>About Me</h1>
           <p>
-            Hi, I'm Kalyah McKesey, an engineering student at Carleton University.
+            Hi, I'm Kalyah McKesey, an engineering student in my third year of university.
             I love learning new things and am currently orbiting between school,
             side projects, and co-op terms.
             <br /><br />
@@ -31,7 +31,7 @@ export default function AboutMe() {
             Microsoft apps, and Googling error messages at light speed.
             <br /><br />
             When I'm not coding, I'm probably redesigning something that didn't
-            ask to be redesigned, or discussing the logistics of entering a
+            ask to be redesigned, or discussing the effects of entering a
             black hole with my friends.
             <br /><br />
           </p>

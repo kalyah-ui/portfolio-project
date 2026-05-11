@@ -8,9 +8,9 @@ import htmlLogo from '@/assets/html-logo.svg';
 import cssLogo from '@/assets/css-fill.svg';
 import tsLogo from '@/assets/ts-logo.svg';
 import gitLogo from '@/assets/git-branch.svg';
-import nodeLogo from '@/assets/node-dot-js.svg';
 import figmaLogo from '@/assets/figma.svg';
 import designLogo from '@/assets/graphic-design.svg';
+import microsoftLogo from '@/assets/microsoft-fill.svg';
 
 interface SkillsProps {
   skillGroup?: 'group1' | 'group2' | 'group3' | 'all';
@@ -27,7 +27,7 @@ const Skills: React.FC<SkillsProps> = ({ skillGroup = 'all' }) => {
     { name: 'TypeScript', logo: tsLogo },
     { name: 'Git', logo: gitLogo },
     { name: 'GitHub', logo: githubLogo },
-    { name: 'Node.js', logo: nodeLogo },
+    { name: 'Microsoft Apps', logo: microsoftLogo },
     { name: 'Figma', logo: figmaLogo },
     { name: 'UI/UX Design', logo: designLogo },
   ];
