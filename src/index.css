@@ -303,12 +303,6 @@ a:hover {
   width: fit-content;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  max-width: 800px;
-}
-
 .skill-card {
   background: var(--surface-2);
   backdrop-filter: blur(6px);
