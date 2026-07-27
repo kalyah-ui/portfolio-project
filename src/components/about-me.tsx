@@ -1,5 +1,4 @@
 import FadeInSection from "./fade-in-section";
-import grayImg from "../assets/Profile_Image_Gray.png";
 import colorImg from "../assets/Profile_Image.png";
 import mapPin from "../assets/map-pin.svg";
 
