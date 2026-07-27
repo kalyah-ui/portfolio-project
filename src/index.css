@@ -243,16 +243,16 @@ a:hover {
   width: 260px;
   height: 260px;
   border-radius: 10px;
-  background-image: var(--gray-img);
+  background-image: var(--color-img);
   background-size: cover;
   background-position: center;
   border: 2px solid #bf00ff;
-  transition: background-image 0.3s ease;
-  box-shadow: 0 0 20px #bf00ff55;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
 .about-image:hover {
-  background-image: var(--color-img);
+  filter: grayscale(0%);
   cursor: pointer;
 }
 

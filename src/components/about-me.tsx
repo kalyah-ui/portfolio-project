@@ -1,5 +1,4 @@
 import FadeInSection from "./fade-in-section";
-import grayImg from "../assets/Profile_Image_Gray.png";
 import colorImg from "../assets/Profile_Image.png";
 import mapPin from "../assets/map-pin.svg";
 
@@ -9,12 +8,10 @@ export default function AboutMe() {
 
       <FadeInSection direction="left">
         <div className="about-image-wrapper">
-          <div
+          <img 
+            src={colorImg}
             className="about-image"
-            style={{
-              "--gray-img": `url(${grayImg})`,
-              "--color-img": `url(${colorImg})`,
-            } as React.CSSProperties}
+            alt="Profile"
           />
         </div>
       </FadeInSection>
