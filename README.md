@@ -1,75 +1,66 @@
-# React + TypeScript + Vite
+# Portfolio Project
+## 🔎 Project Introduction
+This is a personal portfolio built using React, Typescript and Vite. The purpose of this portfolio is to showcase my experience and skills, share some information about me, and serve as a point of contact for anyone who wishes to reach out.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currently, the portfolio sections include:
 
-Currently, two official plugins are available:
+- Home
+- Projects
+- About Me
+- Experience
+- Contact
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+These sections may evolve over time as I continue to grow my skill set and update my work.
 
-## React Compiler
+## 🛠️ Getting Started
+### Prerequisites
+- Node.js (v20 or higher recommended)
+- npm 10+ or pnpm 8+ 
+- Git
+- modern browser (i.e. Chrome, Firefox, Edge, Safari)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+  
+This project is built using:
+- Vite
+- React 18
+- Typescript
+- Tailwind CSS v4
+  
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/kalyah-ui/portfolio-project.git
+   ```
+3. Navigate into the project directory
+   ```bash
+   cd portfolio-project
+   ```
+5. Install dependencies
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   pnpm install
+   ```
+7. Start the development server
+   ```bash
+   npm run dev
+   ```
+9. Build for production (optional)
+    ```bash
+   npm run build
+    ```
 
-Note: This will impact Vite dev & build performances.
+## 🪪 License
+This project is licensed under the MIT License.
+You are free to use, modify and distribute this project as long as the original license is included. 
+See the LICENSE file for full details.
 
-## Expanding the ESLint configuration
+## 🔗 Additional Resources
+The UI for this project was planned in Figma, and can be viewed here: [Figma Prototype](https://www.figma.com/proto/5ccHwtxxD0c3A5mw5D9hHX/Portfolio?page-id=0%3A1&node-id=1-528&p=f&viewport=-903%2C-2676%2C0.63&t=HMNjzF37P4owRaEF-1&scaling=min-zoom&content-scaling=fixed)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Note: This Figma page is non-functional
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This portfolio was deployed using Vercel and can be accessed via this link: [Portfolio Link](https://kalyahmckesey.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
