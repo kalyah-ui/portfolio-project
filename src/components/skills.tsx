@@ -46,11 +46,10 @@ const Skills: React.FC<SkillsProps> = ({ skillGroup = "all" }) => {
   };
 
   const skills = getSkillsForGroup(skillGroup);
-  const duplicated = [...skills, ...skills]; // <-- critical
 
   return (
     <div className="skills-grid">
-      {duplicated.map((skill, index) => (
+      {skills.map((skill, index) => (
         <div key={index} className="skill-card">
           <img src={skill.logo} alt={skill.name} className="skill-logo" />
           <p className="skill-name">{skill.name}</p>

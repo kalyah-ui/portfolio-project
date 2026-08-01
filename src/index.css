@@ -386,7 +386,7 @@ a:hover {
 .layer2 {
   scale: 1;
   opacity: 1;
-  animation: marquee-reverse 15s linear infinite;
+  animation-direction: reverse;
 }
 
 .layer3 {
@@ -397,7 +397,7 @@ a:hover {
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(-17%);
   }
 
   100% {
@@ -405,10 +405,6 @@ a:hover {
   }
 }
 
-@keyframes marquee-reverse {
-  0%   { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
 
 
 @keyframes shooting {
