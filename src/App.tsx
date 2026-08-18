@@ -1,14 +1,14 @@
 import { StarsBackgroundAnimation } from "@/components/animations/StarsBackgroundAnimation";
+import { NebulaClouds } from "@/components/ui/DustCloud";
 import Navbar from './components/Navbar'
-import './index.css'
 import FadeInSection from './components/FadeInSection';
 import Button from "./components/StandardButton";
 import MyProjects from './components/MyProjects';
 import AboutMe from './components/AboutMe';
-import { NebulaClouds } from "@/components/ui/DustCloud";
 import SkillsAnimation from "./components/animations/SkillsAnimation";
 import ExperienceCatalog from "./components/Experience";
 import ContactMe from "./components/ContactMe";
+import './index.css'
 
 function App() {
   return (
