@@ -1,4 +1,4 @@
-import FadeInSection from "./fade-in-section";
+import FadeInSection from "./FadeInSection";
 
 const experiences = [
   {

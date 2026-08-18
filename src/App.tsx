@@ -1,14 +1,14 @@
-import { StarsBackgroundAnimation } from "@/components/animations/stars-background-animation";
-import Navbar from './Navbar'
+import { StarsBackgroundAnimation } from "@/components/animations/StarsBackgroundAnimation";
+import Navbar from './components/Navbar'
 import './index.css'
-import FadeInSection from './components/fade-in-section';
-import Button from "./components/button";
-import MyProjects from './components/my-projects';
-import AboutMe from './components/about-me';
-import { NebulaClouds } from "@/components/ui/dust-cloud.tsx";
-import SkillsAnimation from "./components/animations/skills-animation";
-import ExperienceCatalog from "./components/experience";
-import ContactMe from "./components/contact-me";
+import FadeInSection from './components/FadeInSection';
+import Button from "./components/StandardButton";
+import MyProjects from './components/MyProjects';
+import AboutMe from './components/AboutMe';
+import { NebulaClouds } from "@/components/ui/DustCloud";
+import SkillsAnimation from "./components/animations/SkillsAnimation";
+import ExperienceCatalog from "./components/Experience";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
