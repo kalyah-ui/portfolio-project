@@ -1,5 +1,5 @@
 import FadeInSection from "./FadeInSection";
-import colorImg from "../assets/Profile_Image.png";
+import colorImg from "../assets/profile-image.png";
 import mapPin from "../assets/map-pin.svg";
 
 export default function AboutMe() {

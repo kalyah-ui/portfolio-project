@@ -32,7 +32,7 @@ function App() {
               </p>
             </FadeInSection>
             <FadeInSection direction="down">
-              <a href="/Resume.pdf" download>
+              <a href="/kalyah-mckesey-resume.pdf" download>
                 <Button>Download Resume</Button>
               </a>
             </FadeInSection>
