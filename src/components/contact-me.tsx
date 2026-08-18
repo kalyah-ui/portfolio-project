@@ -27,7 +27,6 @@ function ContactMe() {
         e.preventDefault();
         setStatus("loading");
 
-        emailjs
         try {
             await emailjs.send(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,

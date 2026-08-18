@@ -1,6 +1,6 @@
 import Skills from "../skills";
 
-export default function SkillsDemo() {
+export default function SkillsAnimation() {
   return (
     <div className="skills-marquee-container">
       <div className="marquee-row">

@@ -1,4 +1,4 @@
-import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/stars-background-demo";
+import { StarsBackgroundAnimation } from "@/components/animations/stars-background-animation";
 import Navbar from './Navbar'
 import './index.css'
 import FadeInSection from './components/fade-in-section';
@@ -6,7 +6,7 @@ import Button from "./components/button";
 import MyProjects from './components/my-projects';
 import AboutMe from './components/about-me';
 import { NebulaClouds } from "@/components/ui/dust-cloud.tsx";
-import SkillsDemo from "./components/demos/skills-demo";
+import SkillsAnimation from "./components/animations/skills-animation";
 import ExperienceCatalog from "./components/experience";
 import ContactMe from "./components/contact-me";
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       {/* Full-screen star background */}
-      <ShootingStarsAndStarsBackgroundDemo />
+      <StarsBackgroundAnimation />
       <NebulaClouds />
 
       {/* So app content sits above the stars */}
@@ -60,7 +60,7 @@ function App() {
               <h1>Skills</h1>
             </FadeInSection>
             <FadeInSection direction="down">
-              <SkillsDemo />
+              <SkillsAnimation />
             </FadeInSection>
           </div>
         </section>
