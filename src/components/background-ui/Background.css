@@ -42,7 +42,6 @@
   z-index: 0;
 }
 
-
 .nebula-1 {
   top: 10%;
   left: 40%;
@@ -74,4 +73,14 @@
     transform: translateY(-100px);
     opacity: 0;
   }
+}
+
+.shooting-stars-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  pointer-events: none;
+  z-index: -1;
 }

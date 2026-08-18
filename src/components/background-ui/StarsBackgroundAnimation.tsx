@@ -5,7 +5,7 @@ import './Background.css'
 
 export function StarsBackgroundAnimation() {
   return (
-    <div className="fixed inset-0 w-screen h-screen pointer-events-none">
+    <div className="shooting-stars-wrapper">
       <ShootingStars />
       <StarsBackground />
     </div>
