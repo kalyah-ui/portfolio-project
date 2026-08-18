@@ -1,4 +1,3 @@
-/* Grid layout */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -6,7 +5,6 @@
   margin-top: 0px;
 }
 
-/* Card styling */
 .project-card {
   background: var(--surface-2);
   border: 1px solid var(--border);
@@ -14,10 +12,9 @@
   padding: 24px;
   text-align: left;
   transition: 0.25s ease;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px);
 }
 
-/* Title */
 .project-title {
   font-family: var(--heading);
   font-size: 20px;
@@ -26,17 +23,14 @@
   letter-spacing: 1px;
 }
 
-/* Description */
 .project-description {
   color: var(--text-dim);
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 16px;
   white-space: pre-line;
-  /* preserve line breaks in description */
 }
 
-/* Tools row */
 .project-tools {
   display: flex;
   flex-wrap: wrap;
