@@ -1,14 +1,15 @@
-import { StarsBackgroundAnimation } from "@/components/animations/StarsBackgroundAnimation";
-import { NebulaClouds } from "@/components/ui/DustCloud";
-import Navbar from './components/Navbar'
-import FadeInSection from './components/FadeInSection';
-import Button from "./components/StandardButton";
-import MyProjects from './components/MyProjects';
-import AboutMe from './components/AboutMe';
-import SkillsAnimation from "./components/animations/SkillsAnimation";
-import ExperienceCatalog from "./components/Experience";
-import ContactMe from "./components/ContactMe";
+import { StarsBackgroundAnimation } from "@/components/background-ui/StarsBackgroundAnimation";
+import { NebulaClouds } from "@/components/background-ui/DustCloud";
+import Navbar from './components/navbar/Navbar'
+import FadeInSection from './components/fade-in-section/FadeInSection';
+import Button from "./components/button/Button";
+import MyProjects from './components/my-projects/MyProjects';
+import AboutMe from './components/about-me/AboutMe';
+import SkillsAnimation from "./components/skills/SkillsAnimation";
+import ExperienceCatalog from "./components/experience/Experience";
+import ContactMe from "./components/contact-me/ContactMe";
 import './index.css'
+import './App.css'
 
 function App() {
   return (

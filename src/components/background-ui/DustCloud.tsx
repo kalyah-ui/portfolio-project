@@ -1,3 +1,5 @@
+import './Background.css'
+
 export function NebulaClouds() {
   return (
     <>

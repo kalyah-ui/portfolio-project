@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import './FadeInSection.css'
 
 interface FadeInProps {
   children: React.ReactNode;

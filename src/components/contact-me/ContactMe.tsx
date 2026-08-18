@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../fade-in-section/FadeInSection";
+import './ContactMe.css'
 
 function ContactMe() {
     const [formData, setFormData] = useState({

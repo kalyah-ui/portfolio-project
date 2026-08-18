@@ -1,0 +1,44 @@
+.fade-in-up-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-up-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-down-section {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-down-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.fade-in-left-section {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-left-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right-section {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-right-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

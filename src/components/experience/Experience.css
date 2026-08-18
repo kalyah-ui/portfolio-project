@@ -1,0 +1,71 @@
+/* Tool badge */
+.tool-badge {
+  background: var(--code-bg);
+  border: 1px solid var(--accent);
+  padding: 4px 12px;
+  border-radius: 15px;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-family: var(--sans);
+  letter-spacing: 0.5px;
+  transition: 0.25s ease;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+  max-width: 1100px;
+}
+
+.experience-grid {
+  display: grid;
+  gap: 32px;
+  margin-top: 0px;
+}
+
+.experience-duration {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.experience-position {
+  font-family: var(--text);
+  font-size: 18px;
+  color: var(--text-h);
+  margin-bottom: 8px;
+}
+
+.experience-card {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  padding: 18px 20px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: 0.25s ease;
+}
+
+/* Simple vertical indicator */
+.experience-indicator {
+  width: 6px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom,
+      #bf00ff,
+      #3f0087);
+  box-shadow: 0 0 10px #bf00ff55;
+  flex-shrink: 0;
+}
+
+.experience-container:hover .experience-indicator {
+  box-shadow: 0 0 16px #bf00ff, 0 0 32px #3f0087;
+  transform: scaleY(1.05);
+}
+
+.experience-content {
+  flex: 1;
+  text-align: left;
+}

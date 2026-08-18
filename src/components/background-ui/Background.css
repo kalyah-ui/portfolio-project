@@ -1,0 +1,77 @@
+@keyframes shooting {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-200px) translateY(200px);
+  }
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.nebula {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 300px;
+  height: 600px;
+  background: radial-gradient(ellipse at center,
+      rgba(180, 70, 255, 0.45) 0%,
+      rgba(120, 30, 200, 0.25) 40%,
+      rgba(60, 10, 120, 0.05) 70%,
+      transparent 100%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+.nebula-1 {
+  top: 10%;
+  left: 40%;
+}
+
+.nebula-2 {
+  top: 200%;
+  left: 5%;
+  transform: scale(1.2);
+}
+
+.nebula-3 {
+  top: 570%;
+  left: 40%;
+  transform: scale(0.8);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}

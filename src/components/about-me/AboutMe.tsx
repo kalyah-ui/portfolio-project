@@ -1,6 +1,7 @@
-import FadeInSection from "./FadeInSection";
-import colorImg from "../assets/profile-image.png";
-import mapPin from "../assets/map-pin.svg";
+import FadeInSection from "../fade-in-section/FadeInSection";
+import colorImg from "../../assets/profile-image.png";
+import mapPin from "../../assets/map-pin.svg";
+import './AboutMe.css'
 
 export default function AboutMe() {
   return (

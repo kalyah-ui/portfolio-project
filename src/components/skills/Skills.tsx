@@ -11,6 +11,7 @@ import gitLogo from "@/assets/git-branch.svg";
 import figmaLogo from "@/assets/figma.svg";
 import designLogo from "@/assets/graphic-design.svg";
 import microsoftLogo from "@/assets/microsoft-fill.svg";
+import './Skills.css'
 
 interface SkillsProps {
   skillGroup?: "group1" | "group2" | "group3" | "all";

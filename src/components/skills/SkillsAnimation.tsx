@@ -1,4 +1,4 @@
-import Skills from "../skills";
+import Skills from "../skills/Skills";
 
 export default function SkillsAnimation() {
   return (

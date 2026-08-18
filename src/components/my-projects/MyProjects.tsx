@@ -1,4 +1,5 @@
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "../fade-in-section/FadeInSection";
+import './MyProjects.css'
 
 const projects = [
   { id: 1, name: "Portfolio", description: "A responsive portfolio website built with React and TypeScript.", tools: ["React", "TypeScript", "HTML", "CSS", "Figma"] },

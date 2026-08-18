@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import { cn } from "@/lib/utils";
+import './Background.css'
 
 interface ShootingStar {
   id: number;
