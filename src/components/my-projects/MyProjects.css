@@ -5,6 +5,14 @@
   margin-top: 0px;
 }
 
+/*  Desktop Override */
+@media (min-width: 1024px) {
+  .project-grid {
+    /* Allow max 3 cards per row */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .project-card {
   background: var(--surface-2);
   border: 1px solid var(--border);
@@ -13,6 +21,9 @@
   text-align: left;
   transition: 0.25s ease;
   backdrop-filter: blur(1px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
@@ -35,4 +46,5 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: auto;
 }
