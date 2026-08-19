@@ -2,9 +2,10 @@ import FadeInSection from "../fade-in-section/FadeInSection";
 import './MyProjects.css'
 
 const projects = [
-  { id: 1, name: "Portfolio", description: "A responsive portfolio website built with React and TypeScript.", tools: ["React", "TypeScript", "HTML", "CSS", "Figma"] },
-  { id: 2, name: "Temperature & Humidity Sensor", description: "A simple sensor that uses a Raspberry Pi for monitoring environmental conditions.", tools: ["Raspberry Pi", "Android Studio"] },
-  { id: 3, name: "Password Security Checker", description: "A program that uses a cracked password database to evaluate the strength of passwords.", tools: ["Python", "Java"] },
+  { id: 1, name: "Portfolio", description: "A responsive portfolio website built with React and TypeScript.", tools: ["React", "TypeScript", "HTML/CSS", "Vite", "Figma"] },
+  { id: 2, name: "Telemetry Dashboard", description: "A real‑time telemetry dashboard that generates structured logs and visualizes system performance metrics.", tools: ["Python", "FastAPI", "React", "Vite", "Typescript", "HTML/CSS"] },
+  { id: 3, name: "Temperature & Humidity Sensor", description: "A simple sensor that uses a Raspberry Pi for monitoring environmental conditions.", tools: ["Raspberry Pi", "Android Studio", "Flutter", "Python"] },
+  { id: 4, name: "Password Security Checker", description: "A program that uses a cracked password database to evaluate the strength of passwords.", tools: ["Python", "Java"] },
 ];
 
 function ProjectCard({ project }: { project: { id: number; name: string; description: string; tools: string[] } }) {

@@ -7,9 +7,9 @@ const experiences = [
     position: "Software Developer Co-op",
     description: `• Worked on the dev-ops team to develop applications and tools to support the software development lifecycle of internal software products.
     • Designed and implemented a model-driven Power Apps application to streamline the process of managing software development projects, including task tracking, resource allocation, and progress monitoring.
-    • Collaborated and met with team members to gather requirements, design user interfaces, and implement applications using Microsoft Power Apps and Power Automate, enhancing internal workflows and increasing efficiency.
+    • Collaborated and met with clients to gather requirements, design user interfaces, and implement applications using Microsoft Power Apps and Power Automate, enhancing internal workflows and increasing efficiency.
     • Developed Power Automate flows to automate routine tasks and processes, such as data entry, notifications, and approvals, resulting in significant time savings and improved accuracy for end-users.`,
-    tools: ["Microsoft Power Apps", "Microsoft Power Automate", "User Interface Design", "Dataverse", "Windows Software Development"],
+    tools: ["Microsoft Power Platform", "User Interface Design", "Dataverse", "Data Visualization", "Requirements Gathering"],
     duration: "March 2026 - Present"
   },
   {
