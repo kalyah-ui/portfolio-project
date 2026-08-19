@@ -59,6 +59,7 @@
 body {
   margin: 0;
   font-family: var(--sans);
+  overflow-x: hidden;
 }
 
 body::before {
@@ -126,6 +127,12 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+a {
+  @media (max-width: 865px) {
+    font-size: 14px;
+  }
 }
 
 a:hover {
