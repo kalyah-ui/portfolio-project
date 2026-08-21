@@ -26,8 +26,8 @@ export default function AboutMe() {
             I love learning new things and am currently orbiting between school,
             side projects, and co-op terms.
             <br /><br />
-            I have real-world software development experience in app design, Angular,
-            Microsoft apps, and Googling error messages at light speed.
+            I have real-world software development experience in UI design, Angular,
+            Microsoft Power Platform, and Googling error messages at light speed.
             <br /><br />
             When I'm not coding, I'm probably redesigning something that didn't
             ask to be redesigned, or discussing the effects of entering a
