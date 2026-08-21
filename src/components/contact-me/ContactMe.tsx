@@ -24,7 +24,7 @@ function ContactMe() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus("loading");
 
@@ -33,6 +33,7 @@ function ContactMe() {
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 {
+                    name: formData.name,
                     from_name: formData.name,
                     reply_to: formData.email,
                     subject: formData.subject,
