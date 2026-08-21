@@ -62,19 +62,27 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .marquee {
   display: flex;
   width: max-content;         
-  animation: marquee 15s linear infinite;
   will-change: transform;
 }
 
 .marquee .skills-grid {
   display: flex;
   gap: 80px;                   
-  padding-inline: 40px;       
+  padding-inline: 40px;    
+}
+
+.marquee-inner {
+  display: flex;
+  flex-shrink: 0;
 }
 
 .marquee .skill-card {
@@ -84,29 +92,40 @@
   gap: 8px;
 }
 
-/* Animated skill column styling */
+/* Animated skill styling */
 .layer1 {
-  scale: 0.9;
   opacity: 0.7;
+  animation: marquee-reverse 25s linear infinite;
+}
+
+.layer1 .skill-card {
+  scale: 0.9;
 }
 
 .layer2 {
-  scale: 1;
   opacity: 1;
-  animation-direction: reverse;
+  animation: marquee-forward 25s linear infinite;
+}
+
+.layer2 .skill-card {
+  scale: 1;
 }
 
 .layer3 {
-  scale: 0.95;
   opacity: 0.85;
+  animation: marquee-reverse 25s linear infinite;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(-17%);
-  }
+.layer3 .skill-card {
+  scale: 0.95;
+}
 
-  100% {
-    transform: translateX(-50%);
-  }
+@keyframes marquee-forward {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes marquee-reverse {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
