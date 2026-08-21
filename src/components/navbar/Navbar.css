@@ -1,97 +1,90 @@
-@layer components {
-  .navbar-container {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px 32px;
-    padding-inline: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
+.navbar-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--border);
+  z-index: 50;
+}
+
+/* Desktop defaults */
+.navbar-menu {
+  display: flex;
+  gap: 32px;
+  font-family: var(--heading);
+  letter-spacing: 1px;
+}
+
+.navbar-hamburger,
+.navbar-mobile-menu {
+  display: none;
+  /* hide mobile UI on desktop */
+}
+
+.navbar-menu a {
+  color: var(--text-h);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  text-shadow: var(--glow-magenta);
+}
+
+/* Mobile overrides */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    /* hide desktop menu on mobile */
   }
 
-  .navbar {
-    top: 0;
-    width: 100%;
+  .navbar-hamburger {
     display: flex;
-    justify-content: center;
-    padding: 0;
-    backdrop-filter: blur(12px);
-    background: rgba(0, 0, 0, 0.4);
-    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .navbar-hamburger span {
+    width: 28px;
+    height: 3px;
+    background: var(--text-h);
+    border-radius: 2px;
+  }
+
+  .navbar-mobile-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    /* hidden until active */
+    flex-direction: column;
+    gap: 16px;
     z-index: 50;
   }
 
-  /* ---------------------- */
-  /* DESKTOP DEFAULTS       */
-  /* ---------------------- */
-
-  .navbar-menu {
+  .navbar-mobile-menu.active {
     display: flex;
-    gap: 32px;
-    font-family: var(--heading);
-    letter-spacing: 1px;
+    /* show when isOpen === true */
   }
 
-  .navbar-hamburger,
-  .navbar-mobile-menu {
-    display: none;
-    /* hide mobile UI on desktop */
-  }
-
-  .navbar-menu a {
-    color: var(--text-h);
-    text-decoration: none;
-    transition: 0.2s ease;
-  }
-
-  .navbar-menu a:hover {
-    text-shadow: var(--glow-magenta);
-  }
-
-  /* ---------------------- */
-  /* MOBILE OVERRIDES       */
-  /* ---------------------- */
-
-  @media (max-width: 768px) {
-    .navbar-menu {
-      display: none;
-      /* hide desktop menu on mobile */
-    }
-
-    .navbar-hamburger {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      cursor: pointer;
-    }
-
-    .navbar-hamburger span {
-      width: 28px;
-      height: 3px;
-      background: var(--text-h);
-      border-radius: 2px;
-    }
-
-    .navbar-mobile-menu {
-      position: absolute;
-      top: 70px;
-      right: 20px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      padding: 20px;
-      border-radius: 12px;
-      display: none;
-      /* hidden until active */
-      flex-direction: column;
-      gap: 16px;
-      z-index: 50;
-    }
-
-    .navbar-mobile-menu.active {
-      display: flex;
-      /* show when isOpen === true */
-    }
-  }
 }
